@@ -2,6 +2,15 @@
     <head>
         <title> Page4 </title>
         <link rel="stylesheet" href="styles.css"/>
+        <script>
+            function validate(){
+                var username = document.signup.uname.value;
+                var firstname = document.signup.fname.value;
+                var lastname = document.signup.lname.value;
+                var password = document.signup.passw.value;
+                var cpassword = document.signup.cpassw.value;
+            }
+        </script>
     </head>
     <body>
         <header>
@@ -38,7 +47,7 @@
                       </tr>
                       <tr>
                          <td align="right"> <label>Confirm password: </label> </td>
-                         <td> <input type="password" name="cpassw"/><br/> </td>
+                         <td> <input type="cpassword" name="cpassw"/><br/> </td>
                       </tr>
                       <tr>
                          <td colspan="2" align="center"> <input type="submit"/> </td>
