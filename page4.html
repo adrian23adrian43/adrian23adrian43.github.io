@@ -9,6 +9,23 @@
                 var lastname = document.signup.lname.value;
                 var password = document.signup.passw.value;
                 var cpassword = document.signup.cpassw.value;
+
+                if(username == "" || firstname == "" || lastname == "" || password == "" || cpassword == ""){
+                 alert("Fill in all the fields.")   
+                }
+                else{
+                    if(password.length < 8 || password.length > 15){
+                        alert("Password must be between 8 to 15 characters long.")
+                    }
+                else{
+                    if(password != cpassword){
+                        alert("Password and Confirm password should match.")
+                    }
+                    else{
+                        alert("Form submitted successfully.")
+                    }
+                }
+                }
             }
         </script>
     </head>
