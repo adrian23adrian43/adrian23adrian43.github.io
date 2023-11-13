@@ -2,6 +2,32 @@
     <head>
         <title> Page6 </title>
         <link rel="stylesheet" href="styles.css"/>
+        <script>
+            function validate(){
+                var username = document.signup.uname.value;
+                var firstname = document.signup.fname.value;
+                var lastname = document.signup.lname.value;
+                var password = document.signup.passw.value;
+                var cpassword = document.signup.cpassw.value;
+
+                if(username == "" || firstname == "" || lastname == "" || password == "" || cpassword == ""){
+                 alert("Fill in all the fields.")   
+                }
+                else{
+                    if(password.length < 8 || password.length > 15){
+                        alert("Password must be between 8 to 15 characters long.")
+                    }
+                else{
+                    if(password != cpassword){
+                        alert("Password and Confirm password should match.")
+                    }
+                    else{
+                        alert("Form submitted successfully.")
+                    }
+                }
+                }
+            }
+        </script>
     </head>
     <body>
         <header>
@@ -18,7 +44,36 @@
             </ul>
         </header>
         <div class="content">
-
+            <form name="signup">
+                <fieldset>
+                      <legend>Sign Up</legend>
+                  <table>
+                      <tr>
+                         <td align="right"> <label>Username: </label> </td>
+                         <td> <input type="text" name="uname"/><br/> </td>
+                      </tr>
+                      <tr>
+                         <td align="right"> <label>First Name: </label> </td>
+                         <td> <input type="text" name="fname"/><br/> </td>
+                      </tr>
+                      <tr>
+                          <td align="right"> <label>Last Name: </label> </td>
+                          <td> <input type="text" name="lname"/><br/> </td>
+                      </tr>
+                      <tr>
+                          <td align="right"> <label>Password: </label> </td>
+                          <td><input type="password" name="passw"/><br/> </td>
+                      </tr>
+                      <tr>
+                         <td align="right"> <label>Confirm password: </label> </td>
+                         <td> <input type="cpassword" name="cpassw"/><br/> </td>
+                      </tr>
+                      <tr>
+                         <td colspan="2" align="center"> <input type="submit" onclick="validate();" value="Sign Up"/></td>
+                      </tr>
+                  </table>
+                </fieldset>
+              </form>
         </div>
         <footer>
             Copyright &copy; Our Names
