@@ -4,13 +4,13 @@ html {
   }
   header{
     width:100%;
-    align-items: center;
-    background-color: #445a74;
+    align-items: center; 
+    background-color: #366aa8;
     padding-top: 5px;
     padding-bottom: 5px;
   }
   .heading{
-    color: #030403;
+    color: #0f0d0d;
     font-size: 35px;
   }
   .heading h1{
@@ -51,7 +51,7 @@ html {
     font-size: 20px;
     background-color: #445a74;
     bottom: 0;
-    position: fixed;
+    position: static;
   }
   .content p{
     font-size: 25px;
@@ -60,4 +60,6 @@ html {
   .contentpg3{
     background-color: rgb(102, 170, 215);
     margin-left: 0px;
+    text-align: center;
+    font-size: 15px;
   }
