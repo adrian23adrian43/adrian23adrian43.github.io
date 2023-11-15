@@ -56,3 +56,8 @@ html {
   .content p{
     font-size: 25px;
   }
+
+  .contentpg3{
+    background-color: rgb(102, 170, 215);
+    margin-left: 0px;
+  }
