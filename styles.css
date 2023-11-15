@@ -7,7 +7,7 @@ html {
     align-items: center; 
     background-color: #445a74;
     padding-top: 5px;
-    padding-bottom: 5px;
+    padding-bottom: 5px;  
   }
   .heading{
     color: #0f0d0d;
@@ -44,6 +44,10 @@ html {
   }
   .content{
     width: 100%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: #e3d7bd;
+    text-align: center;
   }
   footer{
     width: 100%;
@@ -51,10 +55,12 @@ html {
     font-size: 20px;
     background-color: #445a74;
     bottom: 0;
-    position: static;
+    position: fixed;
+    padding-bottom: 5px;
   }
   .content p{
     font-size: 25px;
+    text-align: center;
   }
 
   .contentpg3{
@@ -63,3 +69,4 @@ html {
     text-align: center;
     font-size: 15px;
   }
+
