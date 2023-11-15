@@ -5,7 +5,7 @@ html {
   header{
     width:100%;
     align-items: center; 
-    background-color: #366aa8;
+    background-color: #445a74;
     padding-top: 5px;
     padding-bottom: 5px;
   }
@@ -20,11 +20,11 @@ html {
     display: flex;
     justify-content: space-around;
     list-style-type: none;
-    padding-bottom: 5px;
+    padding-bottom: 10px;
     margin-bottom: 0px;
-    padding-top: 5px;
+    padding-top: 10px;
     margin-top: 0px;
-    color: #16d9af;
+    background-color: rgb(53, 78, 177);
   }
   .nav-bar a{
     font-size: 20px;
