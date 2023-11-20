@@ -4,29 +4,20 @@
         <link rel="stylesheet" href="styles.css"/>
         <script>
             function validate(){
-                var username = document.signup.uname.value;
-                var firstname = document.signup.fname.value;
-                var lastname = document.signup.lname.value;
-                var password = document.signup.passw.value;
-                var cpassword = document.signup.cpassw.value;
-
-                if(username == "" || firstname == "" || lastname == "" || password == "" || cpassword == ""){
+                var subjects = document.signup.subject.value;
+                var posts = document.signup.post.value;
+                if(subjects == "" || posts == ""){
                  alert("Fill in all the fields.")   
                 }
                 else{
-                    if(password.length < 8 || password.length > 15){
-                        alert("Password must be between 8 to 15 characters long.")
-                    }
-                else{
-                    if(password != cpassword){
-                        alert("Password and Confirm password should match.")
+                    if(posts.length < 15){
+                        alert("Message must be at least 15 characters long.")
                     }
                     else{
-                        alert("Form submitted successfully.")
+                        alert("Message sent successfully.")
                     }
                 }
                 }
-            }
         </script>
     </head>
     <body>
@@ -36,37 +27,25 @@
             </div>
             <ul class="nav-bar">
                 <li><a href = "index.html">Homepage</a></li>
-                <li><a href = "page2.html">page2</a></li>
-                <li><a href = "page3.html">page3</a></li>
-                <li><a class="active" href = "page4.html">Sign Up</a></li>
+                <li><a href = "page2.html">Sean</a></li>
+                <li><a href = "page3.html">Adrian</a></li>
+                <li><a class="active" href = "page4.html">Contact Us</a></li>
             </ul>
         </header>
         <div class="content">
             <form name="signup">
+            <p>This is the page where you can send us your own suggestions or recommendations.</p>
                 <fieldset>
-                      <legend>Sign Up</legend>
+                      <legend>Send us a message!</legend>
                   <table>
                       <tr>
                          <td align="right"> <label>Subject: </label> </td>
-                         <td> <input type="text" name="uname"/><br/> </td>
+                         <td> <input type="text" name="subject"/><br/> </td>
                       </tr>
                       <tr>
                          <td align="right"> <label>Post: </label> </td>
-                         <td> <input type="text" name="fname"/><br/> </td>
+                         <td> <input type="text" name="post"/><br/> </td>
                       </tr>
-                      <tr>
-                          <td align="right"> <label>Last Name: </label> </td>
-                          <td> <input type="text" name="lname"/><br/> </td>
-                      </tr>
-                      <tr>
-                          <td align="right"> <label>Password: </label> </td>
-                          <td><input type="password" name="passw"/><br/> </td>
-                      </tr>
-                      <tr>
-                         <td align="right"> <label>Confirm password: </label> </td>
-                         <td> <input type="cpassword" name="cpassw"/><br/> </td>
-                      </tr>
-                      <tr>
                          <td colspan="2" align="center"> <input type="submit" onclick="validate();" value="Sign Up"/></td>
                       </tr>
                   </table>
@@ -74,7 +53,7 @@
               </form>
         </div>
         <footer>
-            Copyright &copy; Our Names
+            Copyright &copy; Sean and Adrian
         </footer>
     </body>
 </html>
